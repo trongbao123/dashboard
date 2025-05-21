@@ -3,19 +3,19 @@
 import { memo } from 'react'
 
 const RecentActivity = withDynamic(
-  () => import('@/components/pages/dashboard/recent-activity'),
+  () => import('@/modules/dashboard/recent-activity'),
   'RecentActivity',
   { loading: () => <LoadingSpinner /> }
 )
 
 const DashboardStats = withDynamic(
-  () => import('@/components/pages/dashboard/dashboard-stats'),
+  () => import('@/modules/dashboard/dashboard-stats'),
   'DashboardStats',
   { loading: () => <LoadingSpinner /> }
 )
 
 const QuickActions = withDynamic(
-  () => import('@/components/pages/dashboard/quick-actions'),
+  () => import('@/modules/dashboard/quick-actions'),
   'QuickActions',
   { loading: () => <LoadingSpinner /> }
 )

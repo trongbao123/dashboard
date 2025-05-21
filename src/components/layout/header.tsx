@@ -40,7 +40,7 @@ export const Header = memo(function Header() {
               <DropdownMenuLabel>{user?.name}</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                <Link href="/settings">
+                <Link href="/dashboard/setting">
                   <Settings className="mr-2 h-4 w-4" />
                   <span>Settings</span>
                 </Link>

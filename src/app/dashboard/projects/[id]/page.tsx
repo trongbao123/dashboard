@@ -5,7 +5,7 @@ import { withDynamic } from '@/lib/with-dynamic'
 import { useParams } from 'next/navigation'
 
 const ProjectDetailPage = withDynamic(
-  () => import('@/components/pages/project/project-detail-page'),
+  () => import('@/modules/project/project-detail-page'),
   'ProjectDetailPage',
   {
     loading: () => {

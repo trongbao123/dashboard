@@ -6,7 +6,7 @@ import { DashboardContent } from './dashboard-content'
 import { withDynamic } from '@/lib/with-dynamic'
 import { LoadingSpinner } from '@/components/common/loading-spinner'
 const CreateProjectDialog = withDynamic(
-  () => import('@/components/pages/project/create-project-dialog'),
+  () => import('@/modules/project/create-project-dialog'),
   'CreateProjectDialog',
   { loading: () => <LoadingSpinner /> }
 )

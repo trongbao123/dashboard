@@ -16,7 +16,7 @@ import { LoadingSpinner } from '@/components/common/loading-spinner'
 import { useActivities } from '@/hooks/use-activities'
 import { Activity } from '@/types/activity'
 import { withDynamic } from '@/lib/with-dynamic'
-const ActivityItem = withDynamic(() => import('../dashboard/activity-item'), 'ActivityItem', {
+const ActivityItem = withDynamic(() => import('./activity-item'), 'ActivityItem', {
   loading: () => <LoadingSpinner />,
 })
 export function RecentActivity() {

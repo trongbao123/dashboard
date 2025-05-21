@@ -5,7 +5,7 @@ import { withDynamic } from '@/lib/with-dynamic'
 import { useParams } from 'next/navigation'
 
 const ActivityDetailPage = withDynamic(
-  () => import('@/components/pages/activities/activity-detail-page'),
+  () => import('@/modules/activities/activity-detail-page'),
   'ActivityDetailPage',
   {
     loading: () => {
